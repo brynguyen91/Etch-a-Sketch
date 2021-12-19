@@ -1,0 +1,70 @@
+.gridSquare{
+    background-color: grey;
+    height: 1fr;
+    width: 1fr;
+    /* grid-auto-rows: minmax(100px, auto); */
+    grid-auto-rows: auto;
+}
+
+#container{
+    display: inline-grid;
+    grid-template-columns: repeat(16, 1fr);
+    /* grid-template-columns: repeat(16, 960/16px); */
+    width: 450px;
+    height: 450px;
+    border-color: pink;
+    border-style: solid;
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* position: fixed; */
+    /* top: 50%; */
+    /* left: 50%; */
+}
+
+#outerContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#title{
+    font-size: 48px;
+}
+
+/**
+    Slider
+**/
+.slideContainer{
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 15%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
